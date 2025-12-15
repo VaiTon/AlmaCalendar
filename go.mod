@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	github.com/arran4/golang-ical v0.3.2
-	github.com/cartabinaria/unibo-go v0.4.0
+	github.com/cartabinaria/unibo-go v0.5.1
 	github.com/gin-contrib/multitemplate v1.1.1
 	github.com/gin-contrib/size v1.0.2
 	github.com/gin-gonic/gin v1.10.1
@@ -18,8 +18,8 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.2.0 // indirect
-	github.com/antchfx/htmlquery v1.3.4 // indirect
-	github.com/antchfx/xpath v1.3.4 // indirect
+	github.com/antchfx/htmlquery v1.3.5 // indirect
+	github.com/antchfx/xpath v1.3.5 // indirect
 	github.com/bytedance/sonic v1.13.3 // indirect
 	github.com/bytedance/sonic/loader v0.2.4 // indirect
 	github.com/cloudwego/base64x v0.1.5 // indirect
