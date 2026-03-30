@@ -11,7 +11,7 @@ require (
 	github.com/go-playground/assert/v2 v2.2.0
 	github.com/lf4096/gin-compress v0.1.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
-	github.com/rs/zerolog v1.34.0
+	github.com/rs/zerolog v1.35.0
 )
 
 require (
