@@ -2,13 +2,14 @@ module github.com/VaiTon/unibocalendar
 
 go 1.26.0
 
+toolchain go1.27.3
+
 require (
 	github.com/arran4/golang-ical v0.3.7
 	github.com/cartabinaria/unibo-go v0.5.2
 	github.com/gin-contrib/multitemplate v1.1.4
 	github.com/gin-contrib/size v1.0.2
 	github.com/gin-gonic/gin v1.12.0
-	github.com/go-playground/assert/v2 v2.2.0
 	github.com/lf4096/gin-compress v0.1.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/rs/zerolog v1.34.0
@@ -31,7 +32,7 @@ require (
 	github.com/goccy/go-yaml v1.19.2 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.4.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
@@ -45,9 +46,9 @@ require (
 	github.com/ugorji/go/codec v1.3.1 // indirect
 	go.mongodb.org/mongo-driver/v2 v2.8.0 // indirect
 	golang.org/x/arch v0.29.0 // indirect
-	golang.org/x/crypto v0.56.0 // indirect
-	golang.org/x/net v0.57.0 // indirect
-	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/text v0.41.0 // indirect
+	golang.org/x/crypto v0.57.0 // indirect
+	golang.org/x/net v0.60.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+	golang.org/x/text v0.42.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
