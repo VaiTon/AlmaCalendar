@@ -21,11 +21,10 @@ var (
 	subjectsCache               = cache.New(subjectsCacheExpirationTime, time.Hour*6)
 )
 
-type subjectMap = map[int]map[curriculum.Curriculum][]timetable.SimpleSubject
+type subjectMap map[int]map[curriculum.Curriculum][]timetable.SimpleSubject
 
-// The return type is a map that for every year of the course map a curriculum
-// to a slice of subjects
-func getSubjectsMapFromCourseAndCurricula(course *unibo_integ.Course, curricula map[int]curriculum.Curricula) (subjectMap, error) {
+// The return value maps each year and curriculum to its subjects.
+func (app *application) getSubjectsMapFromCourseAndCurricula(course *unibo_integ.Course, curricula map[int]curriculum.Curricula) (subjectMap, error) {
 	if course == nil {
 		return nil, fmt.Errorf("course parameter is nil")
 	}
@@ -49,7 +48,7 @@ func getSubjectsMapFromCourseAndCurricula(course *unibo_integ.Course, curricula 
 				continue
 			}
 
-			courseTimetable, err := course.GetTimetable(y, c, nil)
+			courseTimetable, err := app.api.GetTimetable(course, y, c, nil)
 			if err != nil {
 				// Can't do much. We return nil so the caller can retry
 				return nil, fmt.Errorf("unable to retrieve timetable for subjects: %w", err)
@@ -82,6 +81,8 @@ func filterTimetableBySubjects(t timetable.Timetable, codes []string) timetable.
 // This functions calls getSubjectsMapFromCourseAndCurricula for every course,
 // so the cache is always full and users do not see a slow site
 func fillSubjectsCache(courses unibo_integ.CoursesMap) {
+	app := application{api: liveCourseAPI{}}
+
 	// This is to make sure everything is started
 	time.Sleep(time.Second * 5)
 
@@ -93,7 +94,7 @@ func fillSubjectsCache(courses unibo_integ.CoursesMap) {
 			log.Err(err).Int("course-code", course.Codice).Str("course-name", course.Descrizione).Msg("Can't get curricula in workerfor course")
 			continue
 		}
-		_, err = getSubjectsMapFromCourseAndCurricula(&course, curricula)
+		_, err = app.getSubjectsMapFromCourseAndCurricula(&course, curricula)
 		if err != nil {
 			log.Err(err).Msg("Can't subjects in worker")
 			continue
