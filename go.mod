@@ -1,11 +1,11 @@
 module github.com/VaiTon/unibocalendar
 
-go 1.26.0
+go 1.26.10
 
 require (
 	github.com/arran4/golang-ical v0.3.7
 	github.com/cartabinaria/unibo-go v0.5.2
-	github.com/gin-contrib/multitemplate v1.1.4
+	github.com/gin-contrib/multitemplate v1.1.5
 	github.com/gin-contrib/size v1.0.2
 	github.com/gin-gonic/gin v1.12.0
 	github.com/go-playground/assert/v2 v2.2.0
@@ -45,9 +45,9 @@ require (
 	github.com/ugorji/go/codec v1.3.1 // indirect
 	go.mongodb.org/mongo-driver/v2 v2.8.0 // indirect
 	golang.org/x/arch v0.29.0 // indirect
-	golang.org/x/crypto v0.56.0 // indirect
-	golang.org/x/net v0.57.0 // indirect
-	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/text v0.41.0 // indirect
+	golang.org/x/crypto v0.57.0 // indirect
+	golang.org/x/net v0.60.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+	golang.org/x/text v0.42.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
