@@ -1,13 +1,13 @@
 module github.com/VaiTon/unibocalendar
 
-go 1.26.0
+go 1.26.10
 
 toolchain go1.27.3
 
 require (
 	github.com/arran4/golang-ical v0.3.7
 	github.com/cartabinaria/unibo-go v0.5.2
-	github.com/gin-contrib/multitemplate v1.1.4
+	github.com/gin-contrib/multitemplate v1.1.6
 	github.com/gin-contrib/size v1.0.2
 	github.com/gin-gonic/gin v1.12.0
 	github.com/lf4096/gin-compress v0.1.0

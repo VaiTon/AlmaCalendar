@@ -24,8 +24,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gabriel-vasile/mimetype v1.4.13 h1:46nXokslUBsAJE/wMsp5gtO500a4F3Nkz9Ufpk2AcUM=
 github.com/gabriel-vasile/mimetype v1.4.13/go.mod h1:d+9Oxyo1wTzWdyVUPMmXFvp4F9tea18J8ufA774AB3s=
-github.com/gin-contrib/multitemplate v1.1.4 h1:2FWMNvcnwcm8dcfg9SUIy8JrkhPsOvKX65OD49Rd1rM=
-github.com/gin-contrib/multitemplate v1.1.4/go.mod h1:jrv4FTq2xIDQ9/S2SpnishO14iikE4j74jLgh2q59iM=
+github.com/gin-contrib/multitemplate v1.1.6 h1:6YKSigaXUVB/yj2uePbbjBAHk5qWtZ0zZE2DXlPnbWM=
+github.com/gin-contrib/multitemplate v1.1.6/go.mod h1:e8JB4D50/wvRltAHiV1cYrVzCowgv/e7aKLKYHF6E3o=
 github.com/gin-contrib/size v1.0.2 h1:rW5bgj7+SwDmnOlZ9lJV8lDYWTrllQAspi3WP8GtqHE=
 github.com/gin-contrib/size v1.0.2/go.mod h1:kKbz/Ervg8tpnrhrBpTO5m4wuQNTVlEqTb1MgkRrmFY=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
